@@ -1,0 +1,3 @@
+{{- if and (.IsPage) (ne .Params.disableComments true) -}}
+  {{- partial "comments.html" . -}}
+{{- end -}}

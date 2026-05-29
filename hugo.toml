@@ -1,0 +1,62 @@
+baseURL = "https://layohang.github.io/"
+locale = "zh-cn"
+defaultContentLanguage = "zh"
+title = "LayoHang's Blog"
+theme = "PaperMod"
+paginate = 10
+
+enableEmoji = true
+enableRobotsTXT = true
+
+[params]
+  env = "production"                            # 环境：production / development
+  description = "一个技术博客，分享编程和开发经验"   # 站点描述，用于 SEO
+  keywords = ["blog", "tech", "programming"]    # 站点关键词，用于 SEO
+  author = "liuhhh"                             # 作者名
+  defaultTheme = "auto"                         # 主题：auto（跟随系统）/ light / dark
+  ShowReadingTime = true                        # 显示文章预计阅读时间
+  ShowShareButtons = true                       # 显示分享按钮（X、Facebook 等）
+  ShowPostNavLinks = true                       # 显示上一篇/下一篇文章导航
+  ShowBreadCrumbs = false                       # 显示面包屑导航
+  ShowCodeCopyButtons = true                    # 显示代码块复制按钮
+  ShowToc = true                                # 显示文章目录（Table of Contents）
+
+  [params.homeInfoParams]
+    Title = "欢迎来到我的博客"
+    Content = "分享技术，记录成长"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/layohang"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 3
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 4
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
