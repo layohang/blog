@@ -1,7 +1,7 @@
 baseURL = "https://layohang.github.io/"
 locale = "zh-cn"
 defaultContentLanguage = "zh"
-title = "LayoHang's Blog"
+title = "Liuhhh's Blog"
 theme = "PaperMod"
 paginate = 10
 
@@ -15,15 +15,15 @@ enableRobotsTXT = true
   author = "liuhhh"                             # 作者名
   defaultTheme = "auto"                         # 主题：auto（跟随系统）/ light / dark
   ShowReadingTime = true                        # 显示文章预计阅读时间
-  ShowShareButtons = true                       # 显示分享按钮（X、Facebook 等）
+  ShowShareButtons = false                       # 显示分享按钮（X、Facebook 等）
   ShowPostNavLinks = true                       # 显示上一篇/下一篇文章导航
   ShowBreadCrumbs = false                       # 显示面包屑导航
   ShowCodeCopyButtons = true                    # 显示代码块复制按钮
   ShowToc = true                                # 显示文章目录（Table of Contents）
 
   [params.homeInfoParams]
-    Title = "欢迎来到我的博客"
-    Content = "分享技术，记录成长"
+    Title = "欢迎来到liuhhh's blog"
+    Content = "AI、RUST、密码学的学习笔记"
 
   [[params.socialIcons]]
     name = "github"
